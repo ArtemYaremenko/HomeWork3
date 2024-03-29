@@ -48,5 +48,15 @@ public class Main {
          System.out.println("За месяц машина произвела " + monthEfficiency + " штук бутылок.");
 
          // Task 5
+
+        int allPot = 120;
+        int whitePotClass = 2;
+        int brownPotClass = 4;
+        int allPotClass = whitePotClass + brownPotClass;
+        int allClasses = allPot / allPotClass;
+        int whitePot = whitePotClass * allClasses;
+        int brownPot = brownPotClass * allClasses;
+
+        System.out.println("В школе, где " + allClasses + " классов, нужно " + whitePot + " банок белой краски и " + brownPot + " банок коричневой краски.");
     }
 }
