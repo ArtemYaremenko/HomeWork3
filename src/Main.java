@@ -1,3 +1,5 @@
+import static java.lang.Math.ceil;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -58,5 +60,60 @@ public class Main {
         int brownPot = brownPotClass * allClasses;
 
         System.out.println("В школе, где " + allClasses + " классов, нужно " + whitePot + " банок белой краски и " + brownPot + " банок коричневой краски.");
+
+        // Task 6
+
+        int bananaWeight = 80;
+        int milkWeight = 105;
+        int plombirBriquetteWeight = 100;
+        int eggWeight = 70;
+        int bananas = 5;
+        int milkPortion = 2;
+        int plombirBriquettes = 2;
+        int eggs = 4;
+        int kG = 1000;
+        int cocktailWeight = (bananaWeight * bananas) + (milkWeight * milkPortion) + (plombirBriquetteWeight * plombirBriquettes) + (eggWeight * eggs);
+        float cocktailWeightKG = (float)cocktailWeight / (float)kG;
+
+        System.out.println(cocktailWeight + " гр");
+        System.out.println(cocktailWeightKG + " кг");
+
+        //Task 7
+
+        double finalTargetWeight = 7;
+        double dayTargetWeightMin = 0.25;
+        double dayTargetWeightMax = 0.5;
+        double dayTargetWeightMid = (dayTargetWeightMin + dayTargetWeightMax) / 2;
+        double daysFinalTargetMin = finalTargetWeight / dayTargetWeightMax;
+        double daysFinalTargetMax = finalTargetWeight / dayTargetWeightMin;
+        double daysFinalTargetMid = finalTargetWeight / dayTargetWeightMid;
+        daysFinalTargetMid =  Math.ceil(daysFinalTargetMid);
+
+        System.out.println(daysFinalTargetMin + " дней минимум потребуется для похудения.");
+        System.out.println(daysFinalTargetMax + " дней максимум потребуется для похудения.");
+        System.out.println(daysFinalTargetMid + " дней в среднем потребуется для похудения.");
+
+        // Task 8
+
+        float mashaSalaryOld = 67760f;
+        float denisSalaryOld = 83690f;
+        float cristinaSalaryOld = 76230f;
+        float index = 0.1f;
+        float mashaSalaryNew = mashaSalaryOld + (mashaSalaryOld * index);
+        float denisSalaryNew = denisSalaryOld + (denisSalaryOld * index);
+        float cristinaSalaryNew = cristinaSalaryOld + (cristinaSalaryOld * index);
+        float mashaYearSalaryOld = mashaSalaryOld * 12f;
+        float mashaYearSalaryNew = mashaSalaryNew * 12f;
+        float denisYearSalaryOld = denisSalaryOld * 12;
+        float denisYearSalaryNew = denisSalaryNew * 12;
+        float cristinaYearSalaryOld = cristinaSalaryOld * 12;
+        float cristinaYearSalaryNew = cristinaSalaryNew * 12;
+        float mashaYearSalaryIncrease = mashaYearSalaryNew - mashaYearSalaryOld;
+        float denisYearSalaryIncrease = denisYearSalaryNew - denisYearSalaryOld;
+        float cristinaYearSalaryIncrease = cristinaYearSalaryNew  - cristinaYearSalaryOld;
+
+        System.out.println("Маша теперь получает " + mashaSalaryNew + " рублей. Годовой доход вырос на " + mashaYearSalaryIncrease + " рублей.");
+        System.out.println("Денис теперь получает " + denisSalaryNew + " рублей. Годовой доход вырос на " + denisYearSalaryIncrease + " рублей.");
+        System.out.println("Кристина теперь получает " + cristinaSalaryNew + " рублей. Годовой доход вырос на " + cristinaYearSalaryIncrease + " рублей.");
     }
 }
