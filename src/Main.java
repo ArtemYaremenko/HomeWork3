@@ -35,8 +35,18 @@ public class Main {
 
         System.out.println("На каждого ученика рассчитано " + studentPaper + " листов бумаги.");
 
+        // Task 4
+         int twoMinutesEfficiency = 16;
+         int twentyMinutesEfficiency = twoMinutesEfficiency * 10;
+         int dayEfficiency = (twentyMinutesEfficiency * 3) * 24;
+         int threeDayEfficiency = dayEfficiency * 3;
+         int monthEfficiency = threeDayEfficiency * 10;
 
+         System.out.println("За 20 минут машина произвела " + twentyMinutesEfficiency + " штук бутылок.");
+         System.out.println("За сутки машина произвела " + dayEfficiency + " штук бутылок.");
+         System.out.println("За 3 дня машина произвела " + threeDayEfficiency + " штук бутылок.");
+         System.out.println("За месяц машина произвела " + monthEfficiency + " штук бутылок.");
 
-
+         // Task 5
     }
 }
