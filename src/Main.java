@@ -26,6 +26,17 @@ public class Main {
 
         // Task 3
 
+        int ludmilaPavlovnaStudents = 23;
+        int annaSergeevnaStudents = 27;
+        int ekaterinaAndreevnaStudents = 30;
+        int allPaper = 480;
+        int allStudents = ludmilaPavlovnaStudents + annaSergeevnaStudents + ekaterinaAndreevnaStudents;
+        int studentPaper = allPaper / allStudents;
+
+        System.out.println("На каждого ученика рассчитано " + studentPaper + " листов бумаги.");
+
+
+
 
     }
 }
